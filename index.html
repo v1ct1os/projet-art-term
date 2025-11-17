@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>AR.js - Projet Spé Art Term</title>
+  <!-- AR.js stable -->
+  <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
+  <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>
+  <style>
+    body, html {
+      margin: 0;
+      overflow: hidden;}
+  </style>
+</head>
+<body>
+  <a-scene embedded arjs="sourceType: webcam;">
+    <a-marker preset="hiro">
+      <a-entity 
+        gltf-model="modelee.glb" 
+        scale="0.015 0.015 0.015">
+      </a-entity>
+    </a-marker>
+    <a-entity camera></a-entity>
+  </a-scene>
+</body>
+</html>
